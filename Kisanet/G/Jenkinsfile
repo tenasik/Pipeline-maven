@@ -1,0 +1,10 @@
+node{
+  stage('SCM checkout') {
+    git 'https://github.com/tenasik/Pipeline-maven'
+  }
+  stage ('Compile-Package){
+         sh 'mvn package'
+         }
+         
+         }
+    
